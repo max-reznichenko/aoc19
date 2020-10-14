@@ -11,7 +11,7 @@ import (
 
 func main() {
 	w1, w2 := readinput()
-	var pm [2][][3]int // [x, y, v]
+	var pm [2][][2]int // [x, y]
 
 	for wi, w := range [2][]string{w1, w2} {
 		x, y := 0, 0
@@ -29,7 +29,7 @@ func main() {
 					y--
 				}
 
-				pm[wi] = append(pm[wi], [3]int{x, y, 1})
+				pm[wi] = append(pm[wi], [2]int{x, y})
 			}
 		}
 	}
