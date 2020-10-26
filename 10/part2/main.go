@@ -7,11 +7,6 @@ import (
 	"os"
 )
 
-type point struct {
-	x int
-	y int
-}
-
 func main() {
 	Map := readinput()
 
